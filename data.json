@@ -18,12 +18,23 @@
         "minuten": 155
       },
       {
+        "locatie": "Thuis",
+        "type": "Zetel",
+        "minuten": 35
+      },
+      {
         "locatie": "Fitness",
         "type": "Grond",
         "minuten": 70
+      },
+      {
+        "locatie": "School",
+        "type": "Stoel",
+        "minuten": 75
       }
     ]
   },
+
   {
     "dag": "Zaterdag",
     "activiteiten": [
@@ -34,16 +45,32 @@
       },
       {
         "locatie": "Thuis",
+        "type": "Stoel",
+        "minuten": 75
+      },
+      {
+        "locatie": "Thuis",
         "type": "Bed",
         "minuten": 185
+      },
+      {
+        "locatie": "Thuis",
+        "type": "Zetel",
+        "minuten": 15
       },
       {
         "locatie": "Fitness",
         "type": "Grond",
         "minuten": 80
+      },
+      {
+        "locatie": "Buiten",
+        "type": "Bankje",
+        "minuten": 45
       }
     ]
   },
+
   {
     "dag": "Zondag",
     "activiteiten": [
@@ -53,6 +80,16 @@
         "minuten": 90
       },
       {
+        "locatie": "Vervoer",
+        "type": "Stoel",
+        "minuten": 125
+      },
+      {
+        "locatie": "Thuis",
+        "type": "Stoel",
+        "minuten": 60
+      },
+      {
         "locatie": "Thuis",
         "type": "Bed",
         "minuten": 95
@@ -60,6 +97,11 @@
       {
         "locatie": "Fitness",
         "type": "Grond",
+        "minuten": 45
+      },
+      {
+        "locatie": "Buiten",
+        "type": "Bankje",
         "minuten": 45
       }
     ]
