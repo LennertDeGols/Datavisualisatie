@@ -1,15 +1,36 @@
 const visualisation = document.querySelector("#visualisation");
+const filterButtons = document.querySelectorAll(".filter");
+
+let sittingData = [];
 
 fetch("data.json")
   .then(response => response.json())
   .then(data => {
-    showData(data);
+    sittingData = data;
+    showData("Alles");
   });
 
-function showData(data) {
+filterButtons.forEach(button => {
+  button.addEventListener("click", () => {
+    const selectedDay = button.dataset.day;
 
-  data.forEach(day => {
+    filterButtons.forEach(btn => btn.classList.remove("active"));
+    button.classList.add("active");
 
+    showData(selectedDay);
+  });
+});
+
+function showData(day) {
+  visualisation.innerHTML = "";
+
+  let filteredData = sittingData;
+
+  if (day !== "Alles") {
+    filteredData = sittingData.filter(item => item.dag === day);
+  }
+
+  filteredData.forEach(day => {
     const dayCard = document.createElement("article");
     dayCard.classList.add("day-card");
 
@@ -19,7 +40,6 @@ function showData(data) {
     dayCard.appendChild(title);
 
     day.activiteiten.forEach(activity => {
-
       const activityDiv = document.createElement("div");
       activityDiv.classList.add("activity");
 
@@ -36,18 +56,13 @@ function showData(data) {
       const blocks = document.createElement("div");
       blocks.classList.add("blocks");
 
-      const amountOfBlocks =
-        Math.round(activity.minuten / 30);
+      const amountOfBlocks = Math.round(activity.minuten / 30);
 
       for (let i = 0; i < amountOfBlocks; i++) {
-
         const block = document.createElement("div");
 
         block.classList.add("block");
-
-        block.classList.add(
-          activity.locatie.toLowerCase()
-        );
+        block.classList.add(activity.locatie.toLowerCase());
 
         blocks.appendChild(block);
       }
