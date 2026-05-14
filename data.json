@@ -1,0 +1,67 @@
+[
+  {
+    "dag": "Vrijdag",
+    "activiteiten": [
+      {
+        "locatie": "Vervoer",
+        "type": "Autostoel",
+        "minuten": 170
+      },
+      {
+        "locatie": "Thuis",
+        "type": "Stoel",
+        "minuten": 120
+      },
+      {
+        "locatie": "Thuis",
+        "type": "Bed",
+        "minuten": 155
+      },
+      {
+        "locatie": "Fitness",
+        "type": "Grond",
+        "minuten": 70
+      }
+    ]
+  },
+  {
+    "dag": "Zaterdag",
+    "activiteiten": [
+      {
+        "locatie": "Vervoer",
+        "type": "Autostoel",
+        "minuten": 145
+      },
+      {
+        "locatie": "Thuis",
+        "type": "Bed",
+        "minuten": 185
+      },
+      {
+        "locatie": "Fitness",
+        "type": "Grond",
+        "minuten": 80
+      }
+    ]
+  },
+  {
+    "dag": "Zondag",
+    "activiteiten": [
+      {
+        "locatie": "Vervoer",
+        "type": "Autostoel",
+        "minuten": 90
+      },
+      {
+        "locatie": "Thuis",
+        "type": "Bed",
+        "minuten": 95
+      },
+      {
+        "locatie": "Fitness",
+        "type": "Grond",
+        "minuten": 45
+      }
+    ]
+  }
+]

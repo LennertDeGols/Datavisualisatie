@@ -52,3 +52,57 @@ h2 {
   max-width: 650px;
   line-height: 1.6;
 }
+
+.visualisation {
+  display: grid;
+  gap: 25px;
+  margin-top: 40px;
+}
+
+.day-card {
+  background-color: white;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.day-card h3 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.activity {
+  margin-bottom: 18px;
+}
+
+.blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 8px;
+}
+
+.block {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+}
+
+.vervoer {
+  background-color: #d96c3b;
+}
+
+.thuis {
+  background-color: #e7b95b;
+}
+
+.school {
+  background-color: #5b8fd6;
+}
+
+.fitness {
+  background-color: #68a86b;
+}
+
+.buiten {
+  background-color: #9b7bd8;
+}
