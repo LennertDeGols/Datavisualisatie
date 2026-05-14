@@ -128,3 +128,13 @@ button.active {
   background-color: #1f1f1f;
   color: white;
 }
+
+.block {
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.block:hover {
+  transform: scale(1.25);
+  outline: 3px solid #1f1f1f;
+}

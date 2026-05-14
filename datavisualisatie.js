@@ -62,9 +62,17 @@ function showData(day) {
         const block = document.createElement("div");
 
         block.classList.add("block");
-        block.classList.add(activity.locatie.toLowerCase());
+block.classList.add(activity.locatie.toLowerCase());
 
-        blocks.appendChild(block);
+block.title =
+  activity.locatie +
+  " - " +
+  activity.type +
+  ": " +
+  activity.minuten +
+  " minuten";
+
+blocks.appendChild(block);
       }
 
       activityDiv.appendChild(text);
